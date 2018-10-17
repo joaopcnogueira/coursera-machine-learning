@@ -105,8 +105,7 @@ pause;
 %
 
 lambda = 0;
-[error_train, error_val] = ...
-    learningCurve([ones(m, 1) X], y, ...
+[error_train, error_val] = learningCurve([ones(m, 1) X], y, ...
                   [ones(size(Xval, 1), 1) Xval], yval, ...
                   lambda);
 
@@ -164,7 +163,7 @@ pause;
 %  lambda to see how the fit and learning curve change.
 %
 
-lambda = 0;
+lambda = 100;
 [theta] = trainLinearReg(X_poly, y, lambda);
 
 % Plot training data and fit

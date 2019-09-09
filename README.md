@@ -1,2 +1,2 @@
-# Machine-Learning
-Repository to keep all of my personal and course projects on machine learning
+# Machine Learning
+Repository where I keep the work done in the Machine Learning by Andrew NG course and some interesting stuff I found and do about machine learning.

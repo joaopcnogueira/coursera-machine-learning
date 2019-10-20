@@ -9,6 +9,6 @@ df_wrangled <- df %>%
     arrange(PRODUTOS) %>% 
     pivot_wider(names_from = COMPRADORES, values_from = PRIORIDADE) %>% 
     set_names(names(.) %>% str_trim()) %>% 
-    select(sort(names(.))) %>% 
+    select(sort(names(.))) %>%
     select(PRODUTOS, everything()) %>% 
     set_names(names(.) %>% str_to_upper())

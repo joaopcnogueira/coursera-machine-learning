@@ -63,17 +63,20 @@ df_melt = df.melt(var_name="Income", value_name="Frequency", id_vars="Religion",
                   value_vars=["X0K.20K", "X20K.40K", "X40K.75K"])
 df_melt
 
+# stacked bar graph
+df_melt.pivot(index="Religion", columns="Income", values="Frequency").plot.bar(stacked=True)
+plt.show()
+
 # seaborn does not have stacked bar plot
 sns.barplot(data=df_melt, x="Religion", y="Frequency", hue="Income")
 plt.show()
 
-# we can do it with pandas by it is hard to understand why the sintax work
-df.plot.bar(x="Religion", stacked=True)
-plt.show()
 
 # coming back, pivoting the data
 df_pivot = df_melt.pivot(index="Religion", columns="Income", values="Frequency")
 df_pivot
+
+
 ```
 
 

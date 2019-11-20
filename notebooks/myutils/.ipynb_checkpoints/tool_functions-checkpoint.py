@@ -19,18 +19,6 @@ def separate(df: pd.DataFrame,
     return df
 
 
-def separate_rows(df: pd.DataFrame, col: str, sep: str) -> pd.DataFrame:
-
-    df = df.copy()
-
-    df[col] = df[col].str.split(sep)
-
-    df = df.explode(col)
-
-    return df
-
-
-
 def str_replace_colnames(df: pd.DataFrame, 
                          pattern: str, 
                          replacement: str) -> pd.DataFrame:

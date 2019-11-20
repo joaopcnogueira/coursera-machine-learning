@@ -67,4 +67,8 @@ df %>%
     View()
 ```
 
+# References
 
+1. https://danieljhocking.wordpress.com/2014/12/03/lags-and-moving-means-in-dplyr/
+2. https://www.business-science.io/timeseries-analysis/2017/07/23/tidy-timeseries-analysis-pt-2.html
+3. https://www.business-science.io/timeseries-analysis/2017/07/02/tidy-timeseries-analysis.html
